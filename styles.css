@@ -10,21 +10,22 @@
 }
 
 img {
-  width: 30%;
-  float: left;
+  width: 100%;
   margin: 1px;
 }
 img:hover {
   border: 1px solid rgb(255, 0, 0);
 }
+
 .imagem-alinhamento-esquerda {
   float: left;
 }
 
 .imagem-alinhamento-direita {
   float: right;
-  
 }
+
+
 
 h1 {
   font-size: 60px;
@@ -34,6 +35,7 @@ h1 {
 p {
   font-size: 20px;
   line-height: 1em;
+  margin: 0;
 }
 
 b {  
@@ -52,13 +54,24 @@ a:visited {
   color: #088;
 }
 
+.img-wrapper {
+  
+  width: 30%;
+}
+
 * {
   font-family: sans-serif;
   font-family: 'Oswald', sans-serif;
 }
 
 @media all and (max-width: 540px) {
-  img {
+  .img-wrapper{
     width: 100%;
   }
+}
+
+.img-wrapper p {
+  font-size: 80%;
+  margin: 5px;
+  text-align: center;
 }
